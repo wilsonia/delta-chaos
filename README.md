@@ -23,5 +23,5 @@ After getting the model runs, we analyze them in Jupyter notebooks. See [demonst
 
 ### Finding an estimated Lyapunov exponent for a delta
   1. Run [chaos_runs.m](bifurcation_network/chaos_runs.m)
-  2. Move the generated `chaos_run.m` and the `eta_perturbed` *directory* to the [delta_lyapunov_exponent](delta_lyapunov_exponent) directory
+  2. Move the generated `chaos_run.m` and the `eta_perturbed` **directory** to the [delta_lyapunov_exponent](delta_lyapunov_exponent) directory
   3. Run the Jupyter notebook in that directory
