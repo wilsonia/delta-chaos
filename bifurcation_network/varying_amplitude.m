@@ -13,7 +13,8 @@ for amp_i=1:30
     run network_initialize;
     run network_mainfile
 
-    save 'varying_amplitude/eta_base'
+    filename = strcat(strcat('varying_amplitude/amp_', int2str(amp_i)), '/eta_base');
+    save(filename);
 
     for file=1:10
         clear workspace;
@@ -29,7 +30,7 @@ for amp_i=1:30
         run network_initialize;
         run network_mainfile
 
-        filename = strcat(strcat(strcat('varying_amplitude/eta_perturbed/', int2str(amp_i), '/'), int2str(file)));
+        filename = strcat(strcat(strcat('varying_amplitude/amp_', int2str(amp_i)), '/eta_perturbed/'), int2str(file));
         save(filename);
     end
 end
