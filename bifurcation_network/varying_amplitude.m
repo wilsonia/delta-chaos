@@ -6,7 +6,7 @@ for amp_i=1:30
 
     load chaotic_base % set parameters for chaotic delta
     timesteps=400000;
-    perturb_amp = 2*10^-4 + .0004*amp_i;
+    perturb_amp = 1*10^-4 + .0001*amp_i;
     slope_perturb_amp = 0;
     init_perturb_amp = 0;
 
@@ -16,14 +16,14 @@ for amp_i=1:30
     filename = strcat(strcat('varying_amplitude/amp_', int2str(amp_i)), '/eta_base');
     save(filename);
 
-    for file=1:10
+    for file=1:30
         clear workspace;
         run network_geometry;
         run network_params;
 
         load chaotic_base % set parameters for chaotic delta
         timesteps=400000;
-        perturb_amp = 2*10^-4 + .0004*amp_i;
+        perturb_amp = 1*10^-4 + .0001*amp_i;
         slope_perturb_amp = 0;
         init_perturb_amp = 0;
 
