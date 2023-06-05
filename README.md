@@ -13,15 +13,15 @@ Potential future work is reproducing this model in Python notebooks with more ac
 
 ## Analyzing model runs
 
-After getting the model runs, we analyze them in Jupyter notebooks. See [demonstrating_chaos](demonstrating_chaos) and [delta_lyapunov_exponent](delta_lyapunov_exponent).
+After getting the model runs, we analyze them in Jupyter notebooks. See [demonstrating_chaos](demonstrating_chaos) and [delta_lyapunov_exponent](average_lyapunov_exponent).
 
 ## Workflow
 ### Demonstrating chaos in Salter et al's model
-  1. Run [chaos_runs.m](MATLAB_Chaos/chaos_runs.m)
+  1. Run [chaos_runs.m](bifurcation_network/chaos_runs.m)
   2. Move the generated `eta_base.m` and `eta_perturbed.m` to the [demonstrating_chaos](demonstrating_chaos) directory
   3. Run the Jupyter notebook in that directory
 
 ### Finding an estimated Lyapunov exponent for a delta
   1. Run [chaos_runs.m](bifurcation_network/chaos_runs.m)
-  2. Move the generated `chaos_run.m` and the `eta_perturbed` **directory** to the [delta_lyapunov_exponent](delta_lyapunov_exponent) directory
+  2. Move the generated `chaos_run.m` and the `eta_perturbed` **directory** to the [average_lyapunov_exponent](average_lyapunov_exponent) directory
   3. Run the Jupyter notebook in that directory
