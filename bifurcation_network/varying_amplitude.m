@@ -1,4 +1,4 @@
-for amp_i=20:20
+for amp_i=1:30
 
     clear workspace;
     run network_geometry;
