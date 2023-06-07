@@ -13,7 +13,7 @@ Potential future work is reproducing this model in Python notebooks with more ac
 
 ## Analyzing model runs
 
-After getting the model runs, we analyze them in Jupyter notebooks. See [demonstrating_chaos](demonstrating_chaos) and [delta_lyapunov_exponent](average_lyapunov_exponent).
+After getting the model runs, we analyze them in Jupyter notebooks. See [demonstrating_chaos](demonstrating_chaos) and [average_lyapunov_exponent](average_lyapunov_exponent).
 
 ## Workflow
 ### Demonstrating chaos in Salter et al's model
